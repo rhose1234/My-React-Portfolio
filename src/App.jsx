@@ -5,11 +5,11 @@ import About from './Components/Sections/About';
 import Projects from './Components/Sections/Projects';
 import Contact from './Components/Sections/Contact';
 import Footer from './Components/Sections/Footer';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';  
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router>  
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
