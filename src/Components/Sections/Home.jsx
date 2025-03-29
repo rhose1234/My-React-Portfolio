@@ -5,7 +5,7 @@ import vid from '../../images/vid.mp4';
 export default function Home() {  
   return (
     <div className="flex items-center h-screen px-4 md:px-24 lg:px-32">
-  <div className="w-full container mx-auto flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 md:space-x-10">
+  <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-y-10 md:gap-y-0 md:gap-x-10">
     {/* Left Content */}
     <div className="w-full md:w-1/2 mt-16 md:mt-[100px] text-center md:text-left px-6 md:px-0">
       <div className="mb-4 flex items-center gap-x-5">

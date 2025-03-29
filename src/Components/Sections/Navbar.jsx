@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white fixed top-0 w-full z-40 h-[12vh] md:h-[14vh] shadow-lg flex justify-center items-center">
-  <div className="w-full max-w-[1280px] mx-auto p-6 md:px-24 lg:px-32 flex justify-between items-center">
+  <div className="container mx-auto  flex justify-between items-center">
     
     {/* Logo */}
     <Link to="/" className="w-32">
@@ -16,7 +16,7 @@ export default function Navbar() {
     </Link>
 
     {/* Desktop Menu */}
-    <ul className="hidden md:flex space-x-10 text-lg text-black">
+    <ul className="hidden md:flex gap-10 text-lg text-black">
       <li><Link to="/" className="active">Home</Link></li>
       <li><Link to="/about">About</Link></li>
       <li><Link to="/contact">Contact</Link></li>
@@ -36,11 +36,11 @@ export default function Navbar() {
 
   {/* Mobile Menu */}
   <div
-    className={`fixed top-[12vh] md:top-[14vh] left-0 w-full bg-black text-white transition-transform duration-300 ease-in-out md:hidden ${
+    className={`fixed top-[12vh] md:top-[14vh] left-0 w-full bg-black  text-white transition-transform duration-300 ease-in-out md:hidden ${
       isOpen ? "translate-x-0" : "translate-x-full"
     }`}
   >
-    <ul className="flex flex-col items-center space-y-6 text-lg py-10">
+    <ul className="flex flex-col items-center gap-10 text-lg pt-10 pb-10">
       <li><Link to="/" className="active" onClick={() => setIsOpen(false)}>Home</Link></li>
       <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
       <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
