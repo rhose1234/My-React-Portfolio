@@ -4,6 +4,7 @@ import About from './Components/Sections/About';
 import Projects from './Components/Sections/Projects';
 import Contact from './Components/Sections/Contact';
 import Footer from './Components/Sections/Footer';
+import Gallery from './Components/Sections/Gallery';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <section id="#home"><Home /></section>
       <section id="#about"><About /></section>
       <section id="#projects"><Projects /></section>
+      <section id="#gallery"><Gallery /></section>
       <section id="#contact"><Contact /></section>
       <Footer />
     </div>
