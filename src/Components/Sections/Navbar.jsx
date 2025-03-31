@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; 
-import mypicture from "../../images/logo2.png";
+import mypicture from "../../images/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-40 h-[12vh] md:h-[14vh] shadow-lg flex justify-center items-center">
-  <div className="container mx-auto  flex justify-between items-center">
+    <nav className="bg-white fixed top-0 w-full z-10 h-[12vh] shadow-lg place-content-center px-2 lg:px-28  ">
+  <div className="container mx-auto flex justify-between items-center  ">
     
     {/* Logo */}
     <Link to="/" className="w-32">
