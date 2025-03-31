@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import vid from '../../images/vid.mp4';
+import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Home() {  
   return (
-    <div className="relative h-screen px-2 lg:px-30 pt-28 lg:pt-8 ">
+    <div id='home' className="relative h-screen px-2 lg:px-30 pt-28 lg:pt-8 ">
       <div className="container w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-x-10">
         {/* Left Content */}
         <div className="w-full md:w-1/2 ">
@@ -21,12 +22,21 @@ export default function Home() {
             I am a Creative Frontend Developer. I help businesses and individuals establish a strong online presence with
             user-friendly and seamless interfaces.
           </p>
-          <Link
-            to="https://calendly.com/marvelousrhose"
-            className="inline-block text-md bg-[#613B26] py-4 px-6 font-bold rounded-xl text-[#DFC6C5]"
-          >
-            Schedule a Call
-          </Link>
+          <div className="inline-flex items-center gap-x-4">
+  <Link to="https://github.com/rhose1234" target="_blank" rel="noopener noreferrer">
+     <FaGithub className="text-[#613B26]   text-xl " />
+  </Link>
+  <Link to="https://www.linkedin.com/in/rose-akorede/" target="_blank" rel="noopener noreferrer" >
+    <FaLinkedin className="text-[#613B26]   text-xl " />
+  </Link>
+  <Link to="https://x.com/RoseMarvelous4" target="_blank" rel="noopener noreferrer">
+     <FaXTwitter className="text-[#613B26]   text-xl " />
+  </Link>
+  <Link to="https://www.instagram.com/rosemarvelous_4/" target="_blank" rel="noopener noreferrer">
+     <FaInstagram className="text-[#613B26]   text-xl " />
+  </Link>
+</div>
+
         </div>
 
         {/* Right Content */}

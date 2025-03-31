@@ -44,9 +44,9 @@ nav ul li .active {
     border-bottom: #613B26 3px solid;
     
   }
-  /* nav ul li a:hover {
-    border: 2px solid #613B26;
-  } */
+  nav ul li a:hover {
+    color: #613B26;
+  } 
   nav ul li a {
     font-size: 16px;
     font-weight: 700;
@@ -71,4 +71,20 @@ nav ul li .active {
   .blinking-circle:nth-child(1) { animation-duration: 1.5s; }
   .blinking-circle:nth-child(2) { animation-duration: 2s; }
 
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee 6s linear infinite;
+    display: flex;
+    width: 500%; 
+  }
+  
+  
   

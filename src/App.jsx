@@ -4,20 +4,17 @@ import About from './Components/Sections/About';
 import Projects from './Components/Sections/Projects';
 import Contact from './Components/Sections/Contact';
 import Footer from './Components/Sections/Footer';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>  
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <section id="#home"><Home /></section>
+      <section id="#about"><About /></section>
+      <section id="#projects"><Projects /></section>
+      <section id="#contact"><Contact /></section>
       <Footer />
-    </Router>
+    </div>
   );
 }
 
