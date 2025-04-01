@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Home() {  
   return (
-    <div id='home' className="relative h-auto md:h-screen px-2 md:px-30 pt-40 md:pt-8 ">
+    <div id='home' className="relative h-auto md:h-screen px-2 md:px-30 pt-40 md:pt-8">
       <div className="container w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-x-10">
         {/* Left Content */}
         <div className="w-full md:w-1/2 ">
@@ -15,16 +15,16 @@ export default function Home() {
             </div>
             <h5 className="text-md font-light">The Tech Creative</h5>
           </div>
-          <h1 className="font-medium text-2xl lg:text-6xl mb-8">
+          <h1 className="font-medium text-2xl lg:text-6xl mb-8 leading-tight tracking-normal">
             Hello! I'm Rose Marvelous
           </h1>
-          <p className="font-normal text-md max-w-2xl mb-8">
+          <p className="font-normal text-md max-w-2xl mb-8 leading-relaxed tracking-wide">
             I am a Creative Frontend Developer. I help businesses and individuals establish a strong online presence with
             user-friendly and seamless interfaces.
           </p>
           <div className="inline-flex items-center gap-x-4">
   <Link to="https://github.com/rhose1234" target="_blank" rel="noopener noreferrer">
-     <FaGithub className="text-[#613B26]   text-xl " />
+     <FaGithub className="text-[#613B26]    text-xl " />
   </Link>
   <Link to="https://www.linkedin.com/in/rose-akorede/" target="_blank" rel="noopener noreferrer" >
     <FaLinkedin className="text-[#613B26]   text-xl " />

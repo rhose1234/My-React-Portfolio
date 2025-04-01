@@ -8,7 +8,7 @@ import tailwind from "../../images/tailwind.png";
 
 export default function About() {
   return (
-    <div className='container mt-8 px-2 lg:px-30 lg:pt-8' id='about'>
+    <div className='container mt-8 px-3 md:px-30 md:pt-8' id='about'>
       <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-y-10 md:gap-x-10'>
 
         {/* Skills Grid for larger screens - Images on the Left */}
@@ -28,7 +28,7 @@ export default function About() {
         </div>
 
         {/* About Text - Text on the Right (Desktop) and First (Mobile) */}
-        <div className='w-full md:w-1/2 mt-6 md:mt-0 md:text-left md:ml-auto'>
+        <div className='w-full md:w-1/2 mt-6 md:mt-0 md:text-left md:ml-auto '>
           <div className="mb-4 flex items-center gap-x-5">
             <div className="relative flex items-center mr-3">
               <span className="blinking-circle absolute w-2 h-2"></span>
@@ -36,7 +36,7 @@ export default function About() {
             </div>
             <h4 className='text-md font-bold'>What You Need To Know</h4>
           </div>
-          <p className="text-gray-700 text-start px-3 md:px-0">
+          <p className="text-gray-700 text-start px-3 md:px-0 leading-relaxed tracking-wide">
 
           I am a Creative Frontend Developer who enjoys bringing ideas to life on the web. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to build clean, responsive, and user-friendly interfaces. <br/> Over time, I’ve gained hands-on experience working on different projects, collaborating with teams, and figuring things out as I go.  <br/>
 

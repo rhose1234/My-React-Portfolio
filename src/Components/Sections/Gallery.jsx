@@ -23,15 +23,16 @@ export default function Gallery() {
   return (
     <div className="w-full py-8" id='gallery'>
 
-<div className="mb-4 flex items-center text-center justify-center gap-x-6">
+<div className="mb-0 flex items-center text-center justify-center ">
   {/* Blinking Circles */}
-  <div className="relative flex items-center">
+  <div className=" flex items-center justify-center mr-4 mb-3">
+    <span className="blinking-circle absolute w-1 h-1"></span>
     <span className="blinking-circle absolute w-2 h-2"></span>
-    <span className="blinking-circle absolute w-4 h-4"></span>
+    <span className="blinking-circle absolute w-3 h-3"></span>
   </div>
   
   {/* Heading */}
-  <h2 className="font-bold text-3xl mt-8 mb-8">Life As A Developer</h2>
+  <h2 className="text-center text-3xl font-bold mb-12 mt-8">Life As a Developer</h2>
 </div>
     
       <Swiper

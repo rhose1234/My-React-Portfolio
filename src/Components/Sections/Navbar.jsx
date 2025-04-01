@@ -6,49 +6,53 @@ import mypicture from "../../images/logo.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Smooth scrolling function
+  const handleScroll = (e, sectionId) => {
+    e.preventDefault();
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false); // Close mobile menu after clicking
+  };
+
   return (
-    <nav className="bg-white fixed top-0 w-full z-10 h-[12vh] shadow-lg place-content-center px-2 lg:px-28  ">
-  <div className="container mx-auto flex justify-between items-center  ">
-    
-    {/* Logo */}
-    <Link to="/" className="w-32">
-      <img src={mypicture} alt="Logo" className="w-full" />
-    </Link>
+    <nav className="bg-white fixed top-0 w-full z-10 h-[12vh] shadow-lg place-content-center px-2 lg:px-28">
+      <div className="container mx-auto flex justify-between items-center gap-x-10">
 
-    {/* Desktop Menu */}
-    <ul className="hidden md:flex gap-10 text-lg text-black">
-      <li><Link to="/" className="active">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-      <li><Link to="/gallery">Gallery</Link></li>
-      <li><Link to="/projects">Projects</Link></li>
-    </ul>
+        {/* Logo */}
+        <Link to="/" className="w-1/2">
+          <img src={mypicture} alt="Logo" className="w-32" />
+        </Link>
 
-    {/* Mobile Menu Button */}
-    <button 
-      className="md:hidden text-black focus:outline-none" 
-      onClick={() => setIsOpen(!isOpen)}
-      aria-expanded={isOpen}
-    >
-      {isOpen ? <X size={28} /> : <Menu size={28} />}
-    </button>
-  </div>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-10 text-lg text-black w-1/2">
+          <li><a href="#home" className="active" onClick={(e) => handleScroll(e, "home")}>Home</a></li>
+          <li><a href="#about" onClick={(e) => handleScroll(e, "about")}>About</a></li>
+          <li><a href="#projects" onClick={(e) => handleScroll(e, "projects")}>Projects</a></li>
+          <li><a href="#gallery" onClick={(e) => handleScroll(e, "gallery")}>Gallery</a></li>
+          <li><a href="#contact" onClick={(e) => handleScroll(e, "contact")}>Contact</a></li>
+        </ul>
 
-  {/* Mobile Menu */}
-  <div
-    className={`fixed top-[12vh] md:top-[14vh] left-0 w-full bg-black  text-white transition-transform duration-300 ease-in-out md:hidden ${
-      isOpen ? "translate-x-0" : "translate-x-full"
-    }`}
-  >
-    <ul className="flex flex-col items-center gap-10 text-lg pt-10 pb-10">
-      <li><Link to="/" className="active" onClick={() => setIsOpen(false)}>Home</Link></li>
-      <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-      <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
-      <li><Link to="/gallery" onClick={() => setIsOpen(false)}>Gallery</Link></li>
-      <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
-    </ul>
-  </div>
-</nav>
+        {/* Mobile Menu Button */}
+        <button 
+          className="md:hidden text-black focus:outline-none" 
+          onClick={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
 
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="fixed top-[12vh] left-0 w-full bg-black text-white transition-transform duration-300 ease-in-out md:hidden">
+          <ul className="flex flex-col items-center gap-10 text-lg pt-10 pb-10">
+            <li><a href="#home" className="active" onClick={(e) => handleScroll(e, "home")}>Home</a></li>
+            <li><a href="#about" onClick={(e) => handleScroll(e, "about")}>About</a></li>
+            <li><a href="#projects" onClick={(e) => handleScroll(e, "projects")}>Projects</a></li>
+            <li><a href="#gallery" onClick={(e) => handleScroll(e, "gallery")}>Gallery</a></li>
+            <li><a href="#contact" onClick={(e) => handleScroll(e, "contact")}>Contact</a></li>
+          </ul>
+        </div>
+      )}
+    </nav>
   );
 }
