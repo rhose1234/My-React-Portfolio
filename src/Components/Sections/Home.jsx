@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Home() {  
   return (
-    <div id='home' className="relative h-auto md:h-screen px-2 md:px-30 pt-40 md:pt-8">
+    <div id='home' className="relative h-auto md:h-screen px-3 md:px-30 pt-30 md:pt-8">
       <div className="container w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-x-10">
         {/* Left Content */}
         <div className="w-full md:w-1/2 ">
