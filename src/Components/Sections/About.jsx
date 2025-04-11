@@ -8,7 +8,7 @@ import tailwind from "../../images/tailwind.png";
 
 export default function About() {
   return (
-    <div className='container mt-8 px-3 md:px-30 md:pt-8' id='about'>
+    <div className='container mt-10 px-3 md:px-30 md:pt-10' id='about'>
       <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-y-10 md:gap-x-10'>
 
         {/* Skills Grid for larger screens - Images on the Left */}
@@ -36,13 +36,13 @@ export default function About() {
             </div>
             <h4 className='text-md font-bold'>What You Need To Know</h4>
           </div>
-          <p className="text-gray-700 text-start px-3 md:px-0 leading-relaxed tracking-wide">
+          <p className="text-gray-700 text-start px-3 w-[470px] md:px-0 leading-relaxed tracking-wide">
 
-          I am a Creative Frontend Developer who enjoys bringing ideas to life on the web. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to build clean, responsive, and user-friendly interfaces. <br/> Over time, I’ve gained hands-on experience working on different projects, collaborating with teams, and figuring things out as I go.  <br/>
+          I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
 
-I recently received the spotlight from the Glovo Women in Tech Bootcamp as the most active participant, which was a big deal for me because I stayed committed until the end. My journey in tech has been filled with learning, challenges, and wins, and I’m always looking for ways to improve and grow.  
+          With hands-on experience across various projects,I’ve collaborated with teams and embraced challenges along the way.  Recently, I was honored as the most active participant in the Glovo Women in Tech Bootcamp for my commitment.
 
-<br/>Right now, I’m focused on leveling up my skills and exploring new opportunities. I'm on my journey to becoming a software engineer, and I love working on things that make an impact. I'm excited about what’s next for me in tech.
+          Currently, I’m focused on enhancing my skills and pursuing new opportunities in software engineering, excited about making a meaningful impact in tech.
           
           </p>
         </div>

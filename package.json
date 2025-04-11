@@ -12,7 +12,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@motionone/utils": "^10.18.0",
     "@tailwindcss/vite": "^4.0.17",
+    "framer-motion": "^12.6.3",
     "lucide-react": "^0.484.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

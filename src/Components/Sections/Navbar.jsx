@@ -14,8 +14,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-10 h-[12vh] shadow-lg place-content-center px-2 lg:px-28">
-      <div className="container mx-auto flex justify-between items-center gap-x-10">
+    <nav className="bg-white fixed top-0 w-full z-10 h-[12vh] shadow-lg place-content-center px-4 md:px-28">
+      <div className="container flex justify-between items-center gap-x-10">
 
         {/* Logo */}
         <Link to="/" className="w-1/2">
@@ -33,7 +33,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-black focus:outline-none" 
+          className="md:hidden text-black focus:outline-none " 
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
         >

@@ -85,6 +85,21 @@ nav ul li .active {
     display: flex;
     width: 500%; 
   }
+  .parallax {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .scroller {
+    display: inline-flex;
+    will-change: transform;
+    padding: 0;
+    gap: 0;
+  }
+  
+    
+  
   
   
   
