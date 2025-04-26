@@ -39,7 +39,7 @@ export default function About() {
             </div>
             <h4 className='text-md font-bold'>What You Need To Know</h4>
           </div>
-          <p className="text-gray-700 text-start px-3 w-[470px] md:px-0 leading-relaxed tracking-wide">
+          <p className="text-gray-700 text-start px-3 w-auto md:px-0 leading-relaxed tracking-wide">
 
           I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
 
