@@ -11,7 +11,7 @@ AOS.init();
 
 export default function About() {
   return (
-    <div className='container  px-3 md:px-30 md:pt-24 h-auto md:h-80vh ' id='about'>
+    <div className='container  px-3 md:px-10 md:pt-24 h-auto md:h-80vh ' id='about'>
       <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-y-10 md:gap-x-28'>
 
         {/* Skills Grid for larger screens - Images on the Left */}
