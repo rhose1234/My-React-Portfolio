@@ -33,7 +33,8 @@ export default function Footer() {
         <div className='px-3'>
           <h3 className="text-lg font-semibold">Let's Talk</h3>
           <p className="mt-2 text-sm">Schedule a call with me to discuss your project.</p>
-          <Link to="https://calendly.com/marvelousrhose" className="inline-block mt-3 px-4 py-2 bg-[#613B26] text-white rounded-lg">Schedule a Call</Link>
+          <Link to="https://calendly.com/marvelousrhose"    target="_blank"
+              rel="noopener noreferrer" className="inline-block mt-3 px-4 py-2 bg-[#613B26] text-white rounded-lg">Schedule a Call</Link>
         </div>
       </div>
     </footer>

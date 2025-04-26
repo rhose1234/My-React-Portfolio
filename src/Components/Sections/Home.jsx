@@ -5,10 +5,10 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 
 export default function Home() {  
   return (
-    <div id='home' className="relative h-auto md:h-screen px-3 md:px-30 pt-30 md:pt-8 bg-[#F9F6F0] ">
+    <div id='home' className="relative h-auto md:h-screen px-3 md:px-30 pt-30 md:pt-16 bg-[#F9F6F0] ">
       <div className="container w-full  flex flex-col md:flex-row justify-between items-center gap-x-10">
         {/* Left Content */}
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full md:w-1/2 " >
           <div className="mb-4 flex items-center gap-x-5">
             <div className="relative flex items-center mr-3">
               <span className="blinking-circle absolute w-2 h-2"></span>
@@ -42,11 +42,11 @@ export default function Home() {
 
         {/* Right Content */}
         <div className="w-full md:w-1/2 lg:pt-10 md:pt-2 px-6 md:px-0">
-          <video autoPlay loop muted className="hero-img rounded-5xl -full md:w-[68vh] h-auto max-h-[80vh] md:max-h-screenw">
+          {/* <video autoPlay loop muted className="hero-img rounded-5xl -full md:w-[68vh] h-auto max-h-[80vh] md:max-h-screenw">
             <source src={vid} type="video/mp4" />
-          </video>
+          </video> */}
 
-          <img src={mypicture} alt="My Picture" className="hero-img w-full md:w-[68vh] h-auto max-h-[80vh] md:max-h-screen"  />
+          <img src={mypicture} alt="My Picture" className="hero-img w-full md:w-[100vh] h-auto max-h-[100vh] md:max-h-screen"  />
         </div>
       </div>
     </div>

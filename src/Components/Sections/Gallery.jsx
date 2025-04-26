@@ -71,7 +71,7 @@ function ParallaxRow({ images, baseVelocity = 50 }) {
   });
 
   return (
-    <div className="overflow-hidden parallax mt-10">
+    <div className="overflow-hidden parallax mt-16">
       <motion.div className="flex gap-0 w-max" style={{ x }}>
         {images.concat(images).map((img, index) => (
           <img

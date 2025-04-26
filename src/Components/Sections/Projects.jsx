@@ -46,9 +46,9 @@ export default function Projects() {
   ];
 
   return (
-    <div className="container mx-auto mt-16 px-3 md:px-10">
+    <div className="container mx-auto px-3 md:px-10 md:pt-30 pt-10" id="projects">
       {/* Heading Section */}
-      <div className="mt-10 mb-10 flex items-center gap-x-5 justify-center ">
+      <div className=" mb-10 flex items-center gap-x-5 justify-center ">
         <div className="relative flex items-center mr-3">
           {/* Blinking Circles */}
           <span className="blinking-circle absolute w-2 h-2"></span>
@@ -58,7 +58,7 @@ export default function Projects() {
       </div>
 
       {/* Projects Mapping */}
-      <div className="flex flex-wrap gap-10 justify-between">
+      <div className="flex flex-wrap gap-10 justify-between" data-aos="fade-up">
         {projects.map((project) => (
           <div key={project.id} className="bg-white shadow-lg p-8 rounded-lg w-full md:w-[48%]">
             <div className="flex justify-center gap-2 mb-6">

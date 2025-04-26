@@ -5,14 +5,17 @@ import js from "../../images/js.png";
 import bootstrap from "../../images/bootstrap.png";
 import react from "../../images/react.png";
 import tailwind from "../../images/tailwind.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 export default function About() {
   return (
-    <div className='container mt-10 px-3 md:px-30 md:pt-10' id='about'>
-      <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-y-10 md:gap-x-10'>
+    <div className='container  px-3 md:px-30 md:pt-24 h-auto md:h-80vh ' id='about'>
+      <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-y-10 md:gap-x-28'>
 
         {/* Skills Grid for larger screens - Images on the Left */}
-        <div className="hidden md:flex flex-wrap justify-start gap-x-8 gap-y-8 w-1/2">
+        <div className="hidden md:flex flex-wrap justify-start gap-x-8 gap-y-8 w-1/2" data-aos="zoom-up-down">
           {[html, css, js, bootstrap, react, tailwind].map((src, index) => (
             <img key={index} src={src} className="w-32" alt="tech-logo"/>
           ))}
@@ -28,7 +31,7 @@ export default function About() {
         </div>
 
         {/* About Text - Text on the Right (Desktop) and First (Mobile) */}
-        <div className='w-full md:w-1/2 mt-6 md:mt-0 md:text-left md:ml-auto '>
+        <div className='w-full md:w-1/2 mt-6 md:mt-0 md:text-left md:ml-auto' data-aos="fade-down">
           <div className="mb-4 flex items-center gap-x-5">
             <div className="relative flex items-center mr-3">
               <span className="blinking-circle absolute w-2 h-2"></span>
