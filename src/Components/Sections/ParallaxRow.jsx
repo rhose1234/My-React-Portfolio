@@ -2,15 +2,15 @@ import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame } from "framer-motion";
 import { wrap } from "@motionone/utils";
 
-function ParallaxRow({ images, baseVelocity = 100 }) {
+function ParallaxRow({ images, baseVelocity = 10 }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 50,
-    stiffness: 400,
+    damping: 10,
+    stiffness: 100,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 2000], [0, 5], {
     clamp: false,
   });
 
@@ -31,7 +31,7 @@ function ParallaxRow({ images, baseVelocity = 100 }) {
   });
 
   return (
-    <div className="overflow-hidden parallax">
+    <div className="overflow-hidden ">
       <motion.div className="flex gap-0 w-max" style={{ x }}>
         {images.concat(images).map((img, index) => (
           <img

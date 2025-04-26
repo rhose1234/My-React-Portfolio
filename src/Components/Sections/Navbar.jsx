@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-10 h-[12vh] shadow-lg place-content-center px-4 md:px-28">
+    <nav className="bg-white fixed top-0 w-full z-10 h-auto shadow-lg place-content-center py-6 px-4 md:px-20">
       <div className="container flex justify-between items-center gap-x-10">
 
         {/* Logo */}
@@ -43,7 +43,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed top-[12vh] left-0 w-full bg-black text-white transition-transform duration-300 ease-in-out md:hidden">
+        <div className="fixed top-[9vh] left-0 w-full bg-black text-white transition-transform duration-300 ease-in-out md:hidden">
           <ul className="flex flex-col items-center gap-10 text-lg pt-10 pb-10">
             <li><a href="#home" className="active" onClick={(e) => handleScroll(e, "home")}>Home</a></li>
             <li><a href="#about" onClick={(e) => handleScroll(e, "about")}>About</a></li>

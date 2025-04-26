@@ -16,10 +16,10 @@ export default function ParallaxImageScroller({ images, baseVelocity = 100 }) {
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
-    damping: 50,
-    stiffness: 400,
+    damping: 10,
+    stiffness: 100,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 2000], [0, 5], {
     clamp: false,
   });
 
@@ -48,7 +48,7 @@ export default function ParallaxImageScroller({ images, baseVelocity = 100 }) {
             key={index}
             src={img}
             alt={`scroll-${index}`}
-            className="h-96 w-auto object-cover rounded"
+            className="h-96 w-auto object-cover "
           />
         ))}
         {/* Duplicate for seamless loop */}
@@ -57,7 +57,7 @@ export default function ParallaxImageScroller({ images, baseVelocity = 100 }) {
             key={`dup-${index}`}
             src={img}
             alt={`scroll-dup-${index}`}
-            className="h-96 w-auto object-cover rounded"
+            className="h-96 w-auto object-cover "
           />
         ))}
       </motion.div>

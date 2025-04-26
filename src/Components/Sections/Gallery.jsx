@@ -41,8 +41,7 @@ const eventImages = [
   event13,
 ];
 
-// Reusable scrolling row component
-function ParallaxRow({ images, baseVelocity = 50 }) {
+function ParallaxRow({ images, baseVelocity = 2 }) { // Significantly reduced base velocity
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -50,7 +49,7 @@ function ParallaxRow({ images, baseVelocity = 50 }) {
     damping: 50,
     stiffness: 400,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 100], [0, 1], { // Reduced max velocity factor
     clamp: false,
   });
 
@@ -71,14 +70,15 @@ function ParallaxRow({ images, baseVelocity = 50 }) {
   });
 
   return (
-    <div className="overflow-hidden parallax mt-16">
+    <div className="overflow-hidden parallax  ">
       <motion.div className="flex gap-0 w-max" style={{ x }}>
         {images.concat(images).map((img, index) => (
           <img
             key={index}
             src={img}
-            alt={`scroll-img-${index}`}
-            className="h-96 w-auto object-cover"
+            alt={`Event ${index % images.length + 1}`}
+            className="h-100 w-100 object-cover  shadow-sm"
+            loading="lazy" 
           />
         ))}
       </motion.div>
@@ -86,24 +86,25 @@ function ParallaxRow({ images, baseVelocity = 50 }) {
   );
 }
 
-// Main gallery export
 export default function Gallery() {
-  const firstRow = eventImages.slice(0, 6); // 6 images
-  const secondRow = eventImages.slice(6);   // 7 images
+  const firstRow = eventImages.slice(0, 6);
+  const secondRow = eventImages.slice(6, 13); 
 
   return (
-    <div className="w-full space-y-12 py-14" id="gallery">
-        <div className="mb-4 flex items-center gap-x-5 justify-center">
+    <section className="  pt-10 md:pt-24" id="gallery">
+      <div className="w-full space-y-12 py-14 " id="gallery">
+        <div className="mb-12 flex items-center gap-x-5 justify-center">
             <div className="relative flex items-center mr-3">
               <span className="blinking-circle absolute w-2 h-2"></span>
               <span className="blinking-circle absolute w-4 h-4"></span>
             </div>
-            <h4 className='text-3xl font-bold'>Life as a Developer</h4>
+            <h4 className='text-3xl font-bold '>Life as a Developer</h4>
           </div>
 
       
-      <ParallaxRow images={firstRow} baseVelocity={-5} />
-      <ParallaxRow images={secondRow} baseVelocity={5} />
+      <ParallaxRow images={firstRow} baseVelocity={-2} />
+      <ParallaxRow images={secondRow} baseVelocity={2} />
     </div>
+    </section>
   );
 }

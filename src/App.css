@@ -41,7 +41,7 @@ body{
 font-family: "Montserrat", serif; */
 nav ul li .active {
     color: #613B26;
-    border-bottom: #613B26 3px solid;
+    border-bottom: #613B26 1px solid;
     
   }
   nav ul li a:hover {

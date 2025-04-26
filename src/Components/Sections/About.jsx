@@ -11,11 +11,11 @@ AOS.init();
 
 export default function About() {
   return (
-    <div className='container mx-auto  px-3 md:px-10 md:pt-24 h-auto md:h-80vh ' id='about'>
-      <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-y-10 md:gap-x-28'>
+    <div className='container mx-auto  px-3 md:px-10 pt-30 md:pt-20 ' id='about'>
+      <div className="grid grid-cols-1 md:grid-cols-2  relative gap-x-10 gap-y-6">
 
         {/* Skills Grid for larger screens - Images on the Left */}
-        <div className="hidden md:flex flex-wrap justify-start gap-x-8 gap-y-8 w-1/2" data-aos="zoom-up-down">
+        <div className="hidden md:grid grid-cols-3 gap-6 w-full" data-aos="zoom-in-right">
           {[html, css, js, bootstrap, react, tailwind].map((src, index) => (
             <img key={index} src={src} className="w-32" alt="tech-logo"/>
           ))}
@@ -23,7 +23,7 @@ export default function About() {
 
         {/* Marquee for smaller screens */}
         <div className="relative overflow-hidden w-full md:hidden">
-          <div className="animate-marquee flex flex-row gap-x-8 ">
+          <div className="animate-marquee flex flex-row gap-x-6">
             {[html, css, js, bootstrap, react, tailwind, html, css, js, bootstrap, react, tailwind].map((src, index) => (
               <img key={index} src={src} className="w-28 md:w-32" alt="techskills-logo"/>
             ))}
@@ -31,7 +31,7 @@ export default function About() {
         </div>
 
         {/* About Text - Text on the Right (Desktop) and First (Mobile) */}
-        <div className='w-full md:w-1/2 mt-6 md:mt-0 md:text-left md:ml-auto' data-aos="fade-down">
+        <div className='w-full  mt-6 md:mt-0 md:text-left md:ml-auto' data-aos="zoom-in-left">
           <div className="mb-4 flex items-center gap-x-5">
             <div className="relative flex items-center mr-3">
               <span className="blinking-circle absolute w-2 h-2"></span>
@@ -40,13 +40,11 @@ export default function About() {
             <h4 className='text-md font-bold'>What You Need To Know</h4>
           </div>
           <p className="text-gray-700 text-start px-3 w-auto md:px-0 leading-relaxed tracking-wide">
+            I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
 
-          I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
+            With hands-on experience across various projects, I’ve collaborated with teams and embraced challenges along the way. Recently, I was honored as the most active participant in the Glovo Women in Tech Bootcamp for my commitment.
 
-          With hands-on experience across various projects,I’ve collaborated with teams and embraced challenges along the way.  Recently, I was honored as the most active participant in the Glovo Women in Tech Bootcamp for my commitment.
-
-          Currently, I’m focused on enhancing my skills and pursuing new opportunities in software engineering, excited about making a meaningful impact in tech.
-          
+            Currently, I’m focused on enhancing my skills and pursuing new opportunities in software engineering, excited about making a meaningful impact in tech.
           </p>
         </div>
 
