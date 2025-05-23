@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+
 body{
     overflow-x: hidden;
 }
@@ -48,8 +49,8 @@ nav ul li .active {
     color: #613B26;
   } 
   nav ul li a {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
     transition: 0.3s;
     font-family: "Lora", serif;
   }
@@ -60,7 +61,7 @@ nav ul li .active {
   }
   
   .blinking-circle {
-    background-color: #BB8E5A   ;
+    background-color:  #BB8E5A ;
     border-radius: 50%;
     animation: blink 1.5s infinite;
     /* border: 1px solid #524848; */

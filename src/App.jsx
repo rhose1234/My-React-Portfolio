@@ -11,11 +11,11 @@ function App() {
     <div>
       <Navbar />
       <section id="#home"><Home /></section>
-      <section id="#about"><About /></section>
+      {/* <section id="#about"><About /></section>
       <section id="#projects"><Projects /></section>
       <section id="#gallery"><Gallery /></section>
-      <section id="#contact"><Contact /></section>
-      <Footer />
+      <section id="#contact"><Contact /></section> */}
+      {/* <Footer /> */}
     </div>
   );
 }

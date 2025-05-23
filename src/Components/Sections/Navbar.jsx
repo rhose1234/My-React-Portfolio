@@ -7,25 +7,25 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Smooth scrolling function
-  const handleScroll = (e, sectionId) => {
+  const handleOpen = (e, sectionId) => {
     e.preventDefault();
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(sectionId);
     setIsOpen(false); // Close mobile menu after clicking
   };
 
   return (
-    <nav className="bg-white fixed top-0 w-full z-10 h-auto shadow-xs place-content-center py-6 px-6 md:px-30">
-      <div className="container flex justify-between items-center gap-x-10">
+    <nav className="bg-transparent shadow-xs fixed top-0 w-full z-10 h-auto shadow-[20px] place-content-center py-6 px-4 md:px-28">
+      <div className="container flex justify-between items-center gap-x-20">
 
         {/* Logo */}
         <Link to="/" className="w-1/2">
-          <img src={mypicture} alt="Logo" className="w-32" />
+          <img src={mypicture} alt="Logo" className="w-26" />
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-lg text-black w-1/2">
+        <ul className="hidden md:flex gap-10 w-1/2">
           <li><a href="#home" className="active" onClick={(e) => handleScroll(e, "home")}>Home</a></li>
-          <li><a href="#about" onClick={(e) => handleScroll(e, "about")}>About</a></li>
+          <li><a href="#about" onClick={(e) => handleOpen(e, "about")}>About</a></li>
           <li><a href="#projects" onClick={(e) => handleScroll(e, "projects")}>Projects</a></li>
           <li><a href="#gallery" onClick={(e) => handleScroll(e, "gallery")}>Gallery</a></li>
           <li><a href="#contact" onClick={(e) => handleScroll(e, "contact")}>Contact</a></li>
@@ -37,16 +37,16 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="fixed top-[9vh] left-0 w-full bg-black text-white transition-transform duration-300 ease-in-out md:hidden">
-          <ul className="flex flex-col items-center gap-10 text-lg pt-10 pb-10">
+          <ul className="flex flex-col items-center gap-10 text-xs pt-10 pb-10">
             <li><a href="#home" className="active" onClick={(e) => handleScroll(e, "home")}>Home</a></li>
-            <li><a href="#about" onClick={(e) => handleScroll(e, "about")}>About</a></li>
+            <li><a href="#about" onClick={(e) => handleOpen(e, "about")}>About</a></li>
             <li><a href="#projects" onClick={(e) => handleScroll(e, "projects")}>Projects</a></li>
             <li><a href="#gallery" onClick={(e) => handleScroll(e, "gallery")}>Gallery</a></li>
             <li><a href="#contact" onClick={(e) => handleScroll(e, "contact")}>Contact</a></li>
