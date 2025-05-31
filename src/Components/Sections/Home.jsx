@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import mypicture from "../../images/mypic.png";
 import 'animate.css';
 
-
 // Animation variants
 const fadeIn = (direction, delay) => {
   return {
@@ -28,18 +27,20 @@ const fadeIn = (direction, delay) => {
 
 export default function Home() {
   return (
-    <div id="home" className="h-screen w-full px-4 md:px-16 lg:px-28 pt-6 bg-[#F9F6F0] max-w-full overflow-x-hidden">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row gap-6 py-8 items-center justify-center md:justify-between md:items-center lg:justify-between">
-
+    <div
+      id="home"
+      className="w-full px-4 md:px-16 lg:px-28 pt-10 bg-[#F9F6F0] max-w-full overflow-x-hidden"
+    >
+      <div className="container mx-auto flex flex-col-reverse md:flex-row gap-8 min-h-screen items-center justify-center">
         {/* Left Content */}
-        <motion.div 
+        <motion.div
           variants={fadeIn("left", 0.3)}
           initial="hidden"
           animate="show"
           exit="hidden"
           className="w-full md:w-1/2"
         >
-          <div className="mb-6 flex items-center gap-x-3 md:mt-0 lg:mt-0 mt-10">
+          <div className="mb-4 flex items-center gap-x-3">
             <div className="relative flex items-center mr-3">
               <span className="blinking-circle absolute w-2 h-2 bg-[#613B26] rounded-full"></span>
               <span className="blinking-circle absolute w-4 h-4 border border-[#613B26] rounded-full"></span>
@@ -48,12 +49,10 @@ export default function Home() {
           </div>
 
           <h3 className="font-medium text-2xl lg:text-5xl mb-2 leading-tight tracking-normal">
-            Hello! I'm 
+            Hello! I'm
           </h3>
 
-          <h2
-            className="hover:animate__heartBeat text-black font-medium text-4xl lg:text-6xl mb-2 leading-tight tracking-normal cursor-pointer"
-          >
+          <h2 className="hover:animate__heartBeat text-black font-medium text-4xl lg:text-6xl mb-2 leading-tight tracking-normal cursor-pointer">
             Rose Marvelous
           </h2>
 
@@ -61,10 +60,7 @@ export default function Home() {
             A Creative Frontend Developer with a strong background in helping businesses and individuals build responsive, visually appealing, and user-friendly online presences.
           </p>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a
               href="/Marvelous_Rose_Resume.pdf"
               download="Rose_Marvelous_CV.pdf"
@@ -78,7 +74,7 @@ export default function Home() {
         </motion.div>
 
         {/* Right Content */}
-        <motion.div 
+        <motion.div
           variants={fadeIn("right", 0.5)}
           initial="hidden"
           animate="show"
@@ -91,10 +87,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="flex justify-center"
           >
-            <img 
+            <img
               src={mypicture}
               alt="Marvelous Rose"
-              className="w-full max-w-xs h-auto mt-14 lg:max-w-[520px] md:max-w-[400px]"
+              className="w-full max-w-xs md:max-w-[350px] lg:max-w-full lg:h-screen lg:object-cover"
             />
           </motion.div>
         </motion.div>
