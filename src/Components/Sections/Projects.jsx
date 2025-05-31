@@ -8,6 +8,10 @@ import project3Desktop from "../../images/project3-desktop.png";
 import project3Mobile from "../../images/project3-mobile.png";
 import project4Desktop from "../../images/project4-desktop.png";
 import project4Mobile from "../../images/project4-mobile.png";
+import { VscGithub } from "react-icons/vsc";
+import { HiMiniLink } from "react-icons/hi2";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Projects() {
   const projects = [
@@ -16,48 +20,56 @@ export default function Projects() {
       name: "BeauteCrate",
       desktopImg: project1Desktop,
       mobileImg: project1Mobile,
-      description: "An e-commerce platform offering beauty products as a subscription service. Built using HTML, CSS, and JavaScript to ensure a seamless shopping experience.",
+      description: "An e-commerce platform offering beauty products as a subscription service.",
       link: "https://beautecrate.netlify.app/",
-      dataAos: "fade-up"
+      code : "https://github.com/rhose1234/BeauteCrate",
+      dataAos: "fade-up",
+      technology: "HTML + CSS + JavaScript"
     },
     {
       id: 2,
       name: "CK-Designs",
       desktopImg: project2Desktop,
       mobileImg: project2Mobile,
-      description: "I built a personal and brand portfolio for Kelvin, a brand strategist. The project showcases his work and was built using HTML, CSS, JavaScript, and Bootstrap.",
-      link: "https://ckdesigns.com.ng/",
-      dataAos: "fade-right"
+      description: "A personal and brand portfolio for a brand strategist.",
+      link: "https://ckdesigns.vercel.app/",
+      code: "https://github.com/rhose1234/ckdesigns",
+      dataAos: "fade-right",
+      technology : "HTML + CSS + JavaScript + Bootstrap"	
     },
     {
       id: 3,
       name: "MovieBox",
       desktopImg: project3Desktop,
       mobileImg: project3Mobile,
-      description: "A movie website built for HNGx Task 3, where I explored implementing React.js and Tailwind CSS to create a seamless user experience.",
+      description: "A movie website built for HNGx Task 3, Fetching the movie data from the TMDB API.",
+      technology: "React JS + Tailwind CSS + TMDB API",
       link: "https://hng-task-2-gules.vercel.app/",
+      code: "https://github.com/rhose1234/hng-task-2",
       dataAos: "fade-left"
     },
     {
       id: 4,
-      name: "SendPal",
+      name: "CheeseCake",
       desktopImg: project4Desktop,
       mobileImg: project4Mobile,
-      description: "I collaborated with the team at CurlBack Inc. to develop the landing page and some other pages for SendPal, an e-commerce platform for sending gifts. Built with React.js and Tailwind CSS.",
-      link: "https://sendpal.pages.dev/",
+      description: "This is a fully responsive landing page for a cheesecake bakery business.",
+      technology: "React JS + Tailwind CSS",
+      link: "https://cheesecakers.netlify.app/",
+      code : "https://github.com/rhose1234/cheesecake",
       dataAos: "fade-up"
     }
   ];
 
   return (
-    <div className="container mx-auto px-3 md:px-10 pt-30 md:pt-30" id="projects">
+    <div className="max-w-full h-auto overflow-x-hidden container mx-auto px-3 lg:px-24 md:px-10 pt-24 md:pt-24" id="projects">
       {/* Heading */}
-      <div className="mb-10 flex items-center gap-x-5 justify-center">
+      <div className="mb-16 flex items-center gap-x-5 justify-center">
         <div className="relative flex items-center mr-3">
           <span className="blinking-circle absolute w-2 h-2"></span>
           <span className="blinking-circle absolute w-4 h-4"></span>
         </div>
-        <h4 className="text-2xl font-bold">Projects I Have Worked On</h4>
+        <h4 className="lg:text-3xl md:text-2xl text-2xl font-bold">Projects I Have Worked On</h4>
       </div>
 
       {/* Projects Grid */}
@@ -70,17 +82,29 @@ export default function Projects() {
               <img src={project.mobileImg} alt={`${project.name} Mobile`} className="w-28 hidden md:block" />
             </div>
             <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-            <p className="text-sm text-gray-700 leading-relaxed mb-4">{project.description}</p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#613B26] hover:text-[#BB8E5A] inline-flex items-center mt-4 transition-all"
-            >
-              View Project
-              <FaExternalLinkAlt className="ml-2 text-sm" />
-            </a>
-          </div>
+            <p className="text-sm text-black leading-relaxed mb-4">{project.description}</p>
+            <p className="text-sm text-gray-900 leading-relaxed mb-4 font-semibold">{project.technology}</p>
+
+            <div className="flex gap-4 mt-4">
+  <a
+    href={project.code}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#613B26] hover:text-[#BB8E5A] inline-flex items-center transition-all text-sm"
+  >
+    Code <VscGithub className="ml-1 text-sm" />
+  </a>
+
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#613B26] hover:text-[#BB8E5A] inline-flex items-center transition-all text-sm cursor-pointer"
+  >
+    View <HiMiniLink className="ml-1 text-sm" />
+  </a>
+</div>
+            </div>
         ))}
       </div>
     </div>

@@ -5,7 +5,7 @@ import mypicture from "../../images/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 text-black py-16 mt-10 px-5 md:px-20" id="footer">
+    <footer className=" max-w-full overflow-x-hidden bg-gray-50 text-black py-16 mt-10 px-5 lg:px-30 md:px-20" id="footer">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
         {/* Logo and Description */}

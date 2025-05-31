@@ -91,7 +91,7 @@ export default function Gallery() {
   const secondRow = eventImages.slice(6, 13); 
 
   return (
-    <section className="  pt-10 md:pt-24" id="gallery">
+    <section className=" max-w-full overflow-x-hidden  pt-10 md:pt-24" id="gallery">
       <div className="w-full space-y-12 py-14 " id="gallery">
         <div className="mb-12 flex items-center gap-x-5 justify-center">
             <div className="relative flex items-center mr-3">

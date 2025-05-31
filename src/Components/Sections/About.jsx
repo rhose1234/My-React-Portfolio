@@ -5,26 +5,27 @@ import js from "../../images/js.png";
 import bootstrap from "../../images/bootstrap.png";
 import react from "../../images/react.png";
 import tailwind from "../../images/tailwind.png";
+import git from "../../images/git.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
 
 export default function About() {
   return (
-    <div className='container mx-auto  px-3 md:px-10 pt-30 md:pt-20 ' id='about'>
+    <div className=' max-w-full overflow-x-hidden container mx-auto  px-3 md:px-24 lg:pt-24 lg:px-28 pt-10 md:pt-16 ' id='about'>
       <div className="grid grid-cols-1 md:grid-cols-2  relative gap-x-10 gap-y-6">
 
         {/* Skills Grid for larger screens - Images on the Left */}
-        <div className="hidden md:grid grid-cols-3 gap-6 w-full" data-aos="zoom-in-right">
-          {[html, css, js, bootstrap, react, tailwind].map((src, index) => (
-            <img key={index} src={src} className="w-32" alt="tech-logo"/>
+        <div className="hidden md:grid grid-cols-3 gap-4 w-full" data-aos="zoom-in-right">
+          {[html, css, js, bootstrap, react, tailwind, git].map((src, index) => (
+            <img key={index} src={src} className="w-28" alt="tech-logo"/>
           ))}
         </div>
 
         {/* Marquee for smaller screens */}
         <div className="relative overflow-hidden w-full md:hidden">
           <div className="animate-marquee flex flex-row gap-x-6">
-            {[html, css, js, bootstrap, react, tailwind, html, css, js, bootstrap, react, tailwind].map((src, index) => (
+            {[html, css, js, bootstrap, react, tailwind, git, html, css, js, bootstrap, react, tailwind, git].map((src, index) => (
               <img key={index} src={src} className="w-28 md:w-32" alt="techskills-logo"/>
             ))}
           </div>
@@ -37,9 +38,9 @@ export default function About() {
               <span className="blinking-circle absolute w-2 h-2"></span>
               <span className="blinking-circle absolute w-4 h-4"></span>
             </div>
-            <h4 className='text-md font-bold'>What You Need To Know</h4>
+            <h4 className='text-2xl font-bold'>What You Need To Know</h4>
           </div>
-          <p className="text-gray-700 text-start px-3 w-auto md:px-0 leading-relaxed tracking-wide">
+          <p className="text-gray-900 text-md text-start px-3 w-auto md:px-0 leading-relaxed tracking-wide">
             I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
 
             With hands-on experience across various projects, I’ve collaborated with teams and embraced challenges along the way. Recently, I was honored as the most active participant in the Glovo Women in Tech Bootcamp for my commitment.

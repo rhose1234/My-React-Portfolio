@@ -11,20 +11,26 @@ export default function Contact() {
 
   // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
     try {
+      // Use FormData for compatibility with Formspree free tier
+      const data = new FormData();
+      data.append("name", formData.name);
+      data.append("email", formData.email);
+      data.append("message", formData.message);
+
       const response = await fetch("https://formspree.io/f/xanedgon", {
         method: "POST",
+        body: data,
         headers: {
-          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         setFormStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Clear input fields
+        setFormData({ name: "", email: "", message: "" });
       } else {
         setFormStatus("Something went wrong. Please try again.");
       }
@@ -32,12 +38,11 @@ export default function Contact() {
       setFormStatus("Error sending message.");
     }
 
-    // Hide status message after 3 seconds
     setTimeout(() => setFormStatus(""), 3000);
   };
 
   return (
-    <div className="flex flex-col justify-center items-center px-4" id="contact">
+    <div className="max-w-full overflow-x-hidden flex flex-col justify-center items-center px-4" id="contact">
       {/* Heading */}
       <div className="mb-0 flex items-center text-center justify-center">
         <div className="flex items-center justify-center mr-4 mb-3">
@@ -52,18 +57,26 @@ export default function Contact() {
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold text-start mb-6">Reach Out To Me</h2>
 
-        {formStatus && <p className="text-green-600 text-center mb-4">{formStatus}</p>}
+        {formStatus && (
+          <p
+            className={`text-center mb-4 ${
+              formStatus === "Message sent successfully!" ? "text-green-600" : "text-red-600"
+            }`}
+          >
+            {formStatus}
+          </p>
+        )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name */}
           <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
+            <label className="block text-sm font-medium text-gray-500">Name</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:ring-[#613B26] focus:border-[#613B26] outline-none"
+              className="mt-1 w-full p-2 border border-[#DFC6C5] rounded-lg focus:ring-[#613B26] focus:border-[#613B26] outline-none"
               placeholder="Enter your name"
               required
             />
@@ -77,7 +90,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 w-full p-2 border border-gray-300 rounded-lg focus:ring-[#613B26] focus:border-[#613B26] outline-none"
+              className="mt-1 w-full p-2 border border-[#DFC6C5] rounded-lg focus:ring-[#613B26] focus:border-[#613B26] outline-none"
               placeholder="Enter your email"
               required
             />
@@ -90,7 +103,7 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="mt-1  w-full p-2 text-sm font-sm border border-gray-300 rounded-lg focus:ring-[#613B26] focus:border-[#613B26] outline-none h-28"
+              className="mt-1 w-full p-2 text-sm font-sm border border-[#DFC6C5] rounded-lg focus:ring-[#613B26] focus:border-[#613B26] outline-none h-28"
               placeholder="Write your message here..."
               required
             ></textarea>

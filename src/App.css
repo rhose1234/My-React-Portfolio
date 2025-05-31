@@ -64,7 +64,7 @@ nav ul li .active {
     background-color:  #BB8E5A ;
     border-radius: 50%;
     animation: blink 1.5s infinite;
-    /* border: 1px solid #524848; */
+    border: 1px solid #524848;
     opacity: 0.1;
   }
   
