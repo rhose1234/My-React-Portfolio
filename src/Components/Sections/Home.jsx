@@ -28,7 +28,7 @@ const fadeIn = (direction, delay) => {
 
 export default function Home() {
   return (
-    <div id="home" className="h-100vh w-full px-4 md:px-28 pt-6 bg-[#F9F6F0] max-w-full overflow-x-hidden">
+    <div id="home" className="h-100vh w-full px-4 md:px-16 lg:px-28 pt-6 bg-[#F9F6F0] max-w-full overflow-x-hidden">
       <div className="container mx-auto flex flex-col-reverse md:flex-row gap-6 py-8 items-center justify-center md:justify-between lg:justify-between">
 
         {/* Left Content */}

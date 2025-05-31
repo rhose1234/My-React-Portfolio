@@ -7,8 +7,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="max-w-full overflow-x-hidden bg-[#F9F6F0] shadow-xl fixed top-0 w-full z-10 h-auto shadow-[20px] place-content-center py-6 px-4 md:px-28">
-      <div className="container flex justify-between items-center gap-x-20">
+    <nav className="max-w-full overflow-x-hidden bg-[#F9F6F0] shadow-xl fixed top-0 w-full z-10 h-auto place-content-center py-6 px-4 lg:px-28 md:px-16">
+      <div className="container flex justify-between items-center gap-x-10 lg:gap-x-24 md:gap-x-10">
 
         {/* Logo */}
         <Link to="/" className="w-1/2">

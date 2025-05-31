@@ -62,7 +62,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="max-w-full h-auto overflow-x-hidden container mx-auto px-3 lg:px-24 md:px-10 pt-24 md:pt-24" id="projects">
+    <div className="max-w-full h-auto overflow-x-hidden container mx-auto px-3 lg:px-24 md:px-28 pt-24 md:pt-24" id="projects">
       {/* Heading */}
       <div className="mb-16 flex items-center gap-x-5 justify-center">
         <div className="relative flex items-center mr-3">
@@ -77,7 +77,7 @@ export default function Projects() {
 
         {projects.map((project) => (
           <div key={project.id} className="bg-[#F9F6F0] shadow-sm p-8 pt-12 rounded-lg" data-aos={project.dataAos}>
-            <div className="flex justify-center gap-2 mb-6">
+            <div className="flex justify-start gap-2 mb-6">
               <img src={project.desktopImg} alt={`${project.name} Desktop`} className="w-80 md:w-[400px]" />
               <img src={project.mobileImg} alt={`${project.name} Mobile`} className="w-28 hidden md:block" />
             </div>
