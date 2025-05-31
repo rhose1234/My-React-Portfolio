@@ -64,7 +64,7 @@ export default function Projects() {
   return (
     <div className="max-w-full max-h-100vh overflow-x-hidden container mx-auto px-3 lg:px-24 md:px-28 pt-24 md:pt-24" id="projects">
       {/* Heading */}
-      <div className="mb-16 flex items-center gap-x-5 justify-center">
+      <div className="mb-16 flex items-center gap-x-5 justify-start lg:justify-center md:justify-center">
         <div className="relative flex items-center mr-3">
           <span className="blinking-circle absolute w-2 h-2"></span>
           <span className="blinking-circle absolute w-4 h-4"></span>
