@@ -38,9 +38,9 @@ export default function About() {
               <span className="blinking-circle absolute w-2 h-2"></span>
               <span className="blinking-circle absolute w-4 h-4"></span>
             </div>
-            <h4 className='text-2xl font-bold'>What You Need To Know</h4>
+            <h4 className='text-2xl font-bold md:text-start lg:text-start text-center'>What You Need To Know</h4>
           </div>
-          <p className="text-gray-900 text-md text-start px-3 w-auto md:px-0 leading-relaxed tracking-wide">
+          <p className="text-gray-900 text-sm text-start px-3 w-auto md:px-0  leading-relaxed tracking-wide">
             I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
 
             With hands-on experience across various projects, I’ve collaborated with teams and embraced challenges along the way. Recently, I was honored as the most active participant in the Glovo Women in Tech Bootcamp for my commitment.

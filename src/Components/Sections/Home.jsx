@@ -28,8 +28,8 @@ const fadeIn = (direction, delay) => {
 
 export default function Home() {
   return (
-    <div id="home" className="h-100vh w-full px-4 md:px-16 lg:px-28 pt-6 bg-[#F9F6F0] max-w-full overflow-x-hidden">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row gap-6 py-8 items-center justify-center md:justify-between lg:justify-between">
+    <div id="home" className="h-screen w-full px-4 md:px-16 lg:px-28 pt-6 bg-[#F9F6F0] max-w-full overflow-x-hidden">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row gap-6 py-8 items-center justify-center md:justify-between md:items-center lg:justify-between">
 
         {/* Left Content */}
         <motion.div 
@@ -94,7 +94,7 @@ export default function Home() {
             <img 
               src={mypicture}
               alt="Marvelous Rose"
-              className="w-full max-w-xs h-auto mt-10 lg:max-w-[520px] md:max-w-[400px]"
+              className="w-full max-w-xs h-auto mt-14 lg:max-w-[520px] md:max-w-[400px]"
             />
           </motion.div>
         </motion.div>
