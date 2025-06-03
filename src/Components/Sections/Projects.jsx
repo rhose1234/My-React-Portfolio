@@ -76,9 +76,9 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
 
         {projects.map((project) => (
-          <div key={project.id} className="bg-[#F9F6F0] shadow-sm p-8 pt-12 rounded-lg" data-aos={project.dataAos}>
-            <div className="flex justify-start gap-2 mb-6">
-              <img src={project.desktopImg} alt={`${project.name} Desktop`} className="w-80 md:w-[400px]" />
+          <div key={project.id} className="bg-[#F9F6F0] shadow-sm px-8 mt-12 py-10 rounded-lg" >
+            <div className="flex justify-start gap-2 mb-6" data-aos={project.dataAos}>
+              <img src={project.desktopImg} alt={`${project.name} Desktop`} className="w-80 md:w-[370px]" />
               <img src={project.mobileImg} alt={`${project.name} Mobile`} className="w-28 hidden md:block" />
             </div>
             <h3 className="text-xl font-semibold mb-2">{project.name}</h3>

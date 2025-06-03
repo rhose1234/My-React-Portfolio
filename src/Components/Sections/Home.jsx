@@ -48,7 +48,7 @@ export default function Home() {
             <h5 className="text-xs font-light text-[#613B26]">The Tech Creative</h5>
           </div>
 
-          <h3 className="font-medium text-2xl lg:text-5xl mb-2 leading-tight tracking-normal">
+          <h3 className="font-medium text-2xl lg:text-4xl mb-2 leading-tight tracking-normal">
             Hello! I'm
           </h3>
 
