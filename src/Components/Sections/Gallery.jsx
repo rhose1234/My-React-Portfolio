@@ -11,19 +11,19 @@ import {
 import { wrap } from "@motionone/utils";
 
 // Image imports
-import event1 from "../../images/1.jpg";
-import event2 from "../../images/2.jpg";
-import event3 from "../../images/3.jpg";
-import event4 from "../../images/4.jpg";
-import event5 from "../../images/5.jpg";
-import event6 from "../../images/6.jpg";
-import event7 from "../../images/7.jpg";
-import event8 from "../../images/8.jpg";
-import event9 from "../../images/9.jpg";
-import event10 from "../../images/10.jpg";
-import event11 from "../../images/11.jpg";
-import event12 from "../../images/12.jpg";
-import event13 from "../../images/13.jpg";
+import event1 from "../../images/1.webp";
+import event2 from "../../images/2.webp";
+import event3 from "../../images/3.webp";
+import event4 from "../../images/4.webp";
+import event5 from "../../images/5.webp";
+import event6 from "../../images/6.webp";
+import event7 from "../../images/7.webp";
+import event8 from "../../images/8.webp";
+import event9 from "../../images/9.webp";
+import event10 from "../../images/10.webp";
+import event11 from "../../images/11.webp";
+import event12 from "../../images/12.webp";
+import event13 from "../../images/13.webp";
 
 const eventImages = [
   event1,

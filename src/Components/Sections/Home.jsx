@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import mypicture from "../../images/mypic.png";
+import mypicture from "../../images/mypic.webp";
 import 'animate.css';
 
 // Animation variants
