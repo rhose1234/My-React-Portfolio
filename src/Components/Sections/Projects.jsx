@@ -8,6 +8,11 @@ import project3Desktop from "../../images/project3-desktop.png";
 import project3Mobile from "../../images/project3-mobile.png";
 import project4Desktop from "../../images/project4-desktop.png";
 import project4Mobile from "../../images/project4-mobile.png";
+import project5Mobile from "../../images/project5-mobile.png";
+import project5Desktop from "../../images/project5-desktop.png";
+import project6Mobile from "../../images/project6-mobile.png";
+import project6Desktop from "../../images/project6-desktop.png";
+
 import { VscGithub } from "react-icons/vsc";
 import { HiMiniLink } from "react-icons/hi2";
 import AOS from 'aos';
@@ -24,7 +29,18 @@ export default function Projects() {
       link: "https://beautecrate.netlify.app/",
       code : "https://github.com/rhose1234/BeauteCrate",
       dataAos: "fade-up",
-      technology: "HTML + CSS + JavaScript"
+      technology: "HTML + CSS + JavaScript + Localstorage"
+    },
+     {
+      id: 6,
+      name: "Tour Guide",
+      desktopImg: project6Desktop,
+      mobileImg: project6Mobile,
+      description: "A responsive, clean travel website with user authentication, trip search, booking, Google Maps integration, and profile management.",
+      technology: "HTML + CSS + JavaScript + Localstorage",
+      link: "https://tourguided.netlify.app/",
+      code : "https://github.com/rhose1234/tour-guide",
+      dataAos: "fade-down"
     },
     {
       id: 2,
@@ -42,7 +58,7 @@ export default function Projects() {
       name: "MovieBox",
       desktopImg: project3Desktop,
       mobileImg: project3Mobile,
-      description: "A movie website built for HNGx Task 3, Fetching the movie data from the TMDB API.",
+      description: "A movie website built during HNGx Task 3, Fetched the movie data from the TMDB API.",
       technology: "React JS + Tailwind CSS + TMDB API",
       link: "https://hng-task-2-gules.vercel.app/",
       code: "https://github.com/rhose1234/hng-task-2",
@@ -57,8 +73,20 @@ export default function Projects() {
       technology: "React JS + Tailwind CSS",
       link: "https://cheesecakers.netlify.app/",
       code : "https://github.com/rhose1234/cheesecake",
-      dataAos: "fade-up"
-    }
+      dataAos: "zoom-in-up"
+    },
+    {
+      id: 5,
+      name: "DebtKnights",
+      desktopImg: project5Desktop,
+      mobileImg: project5Mobile,
+      description: "This is a one page website with contact form for an international startup company that helps relief debts.",
+      technology: "React JS + Tailwind CSS",
+      link: "https://debtknights.com/",
+      code : "https://github.com/rhose1234/DebtKnight",
+      dataAos: "zoom-in-down"
+    },
+     
   ];
 
   return (
