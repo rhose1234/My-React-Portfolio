@@ -59,13 +59,22 @@ export default function About() {
             </div>
             <h4 className='text-2xl font-bold md:text-start lg:text-start text-center'>What You Need To Know</h4>
           </div>
-          <p className="text-gray-900 text-sm text-start px-3 w-auto md:px-0 leading-relaxed tracking-wide">
-            I’m a Creative Frontend Developer passionate about turning ideas into web solutions. I use HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to create responsive, user-friendly interfaces.
+          <p className="text-gray-900 text-sm text-start px-3 w-auto md:px-0 leading-loose tracking-wide">
+  I’m a Frontend Developer who loves bringing ideas to life on the web.  
+  I work with HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and React JS to build clean, 
+  responsive, and user-friendly interfaces.  
 
-            With hands-on experience across various projects, I’ve collaborated with teams and embraced challenges along the way. Recently, I was honored as the most active participant in the Glovo Women in Tech Bootcamp for my commitment.
+  I’ve had the chance to work on different projects, team up with amazing people, and grow through 
+  every challenge. <br/> One highlight? Being recognized as the <strong> Most Active Participant </strong> 
+  in the Glovo Women in Tech Bootcamp for my dedication and consistency.  
 
-            Currently, I’m focused on enhancing my skills and pursuing new opportunities in software engineering, excited about making a meaningful impact in tech.
-          </p>
+  Right now, I’m leveling up my skills in <strong>software engineering</strong>, and I’m super excited 
+  about creating impact and pushing boundaries in tech.  
+
+  <br/>  
+  <strong>Watch Out For Me!!!</strong>
+</p>
+
         </div>
 
       </div>

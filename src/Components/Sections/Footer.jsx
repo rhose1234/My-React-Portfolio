@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-4">
           <h3 className="text-lg font-semibold">Connect with me</h3>
           <div className="flex flex-wrap space-x-2">
-            <Link to="https://x.com/RoseMarvelous4" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
+            <Link to="https://x.com/WebDeveloperng" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
               <FaXTwitter size={20} />
             </Link>
             <Link to="https://www.linkedin.com/in/rose-akorede/" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
@@ -29,7 +29,7 @@ export default function Footer() {
             <Link to="https://github.com/rhose1234" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
               <FaGithub size={20} />
             </Link>
-            <Link to="https://www.instagram.com/marvelousrose02/" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
+            <Link to="https://www.instagram.com/webdeveloper_ng/" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
               <FaInstagram size={20} />
             </Link>
             <Link to="https://web.facebook.com/profile.php?id=100070538305621" target="_blank" rel="noopener noreferrer" className="text-[#613B26] hover:bg-[#BB8E5A] p-2 rounded-full transition">
