@@ -12,6 +12,8 @@ import project5Mobile from "../../images/project5-mobile.png";
 import project5Desktop from "../../images/project5-desktop.png";
 import project6Mobile from "../../images/project6-mobile.png";
 import project6Desktop from "../../images/project6-desktop.png";
+import project7Desktop from "../../images/project7-desktop.png";
+import project7Mobile from "../../images/project7-mobile.png";
 
 import { VscGithub } from "react-icons/vsc";
 import { HiMiniLink } from "react-icons/hi2";
@@ -20,6 +22,29 @@ import 'aos/dist/aos.css';
 
 export default function Projects() {
   const projects = [
+    {
+      id: 7,
+      name: "Mesktomolog",
+      desktopImg: project7Desktop,
+      mobileImg: project7Mobile,
+     technology: "React JS + Tailwind CSS",
+
+      description: "This is a multi-page logistics website built for Mesktomo Logistics. It showcases the company’s services and allows users to book quotes and track their goods.",
+      link: "https://mesktomolog.com/",
+      code : "https://github.com/rhose1234/Mesktomo",
+      dataAos: "zoom-in-up"
+    },
+    {
+      id: 5,
+      name: "DebtKnights",
+      desktopImg: project5Desktop,
+      mobileImg: project5Mobile,
+      description: "This is a one page website with contact form for an international startup company that helps relief debts.",
+      technology: "React JS + Tailwind CSS",
+      link: "https://debtknights.com/",
+      code : "https://github.com/rhose1234/DebtKnight",
+      dataAos: "zoom-in-down"
+    },
     {
       id: 1,
       name: "BeauteCrate",
@@ -75,17 +100,8 @@ export default function Projects() {
       code : "https://github.com/rhose1234/cheesecake",
       dataAos: "zoom-in-up"
     },
-    {
-      id: 5,
-      name: "DebtKnights",
-      desktopImg: project5Desktop,
-      mobileImg: project5Mobile,
-      description: "This is a one page website with contact form for an international startup company that helps relief debts.",
-      technology: "React JS + Tailwind CSS",
-      link: "https://debtknights.com/",
-      code : "https://github.com/rhose1234/DebtKnight",
-      dataAos: "zoom-in-down"
-    },
+    
+    
      
   ];
 

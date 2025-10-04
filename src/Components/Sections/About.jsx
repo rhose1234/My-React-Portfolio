@@ -7,6 +7,7 @@ import react from "../../images/react.png";
 import tailwind from "../../images/tailwind.png";
 import git from "../../images/git.png"
 import github from "../../images/github.png";
+import figma from "../../images/figma.webp"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
@@ -18,7 +19,7 @@ const skills = [
   { src: bootstrap, label: "Bootstrap" },
   { src: html, label: "HTML" },
   { src: css, label: "CSS" },
-
+    { src: figma, label: "Figma" },
   { src: git, label: "Git" },
   { src: github, label: "Github" },
 ];

@@ -45,7 +45,7 @@ export default function Home() {
               <span className="blinking-circle absolute w-2 h-2 bg-[#613B26] rounded-full"></span>
               <span className="blinking-circle absolute w-4 h-4 border border-[#613B26] rounded-full"></span>
             </div>
-            <h5 className="text-xs font-light text-[#613B26]">Web Developer Nigeria!</h5>
+            <h5 className="text-xs font-light text-[#613B26]">Best Website Developer in Nigeria!</h5>
           </div>
 
           <h3 className="font-medium text-2xl lg:text-4xl mb-2 leading-tight tracking-normal">
@@ -57,7 +57,7 @@ export default function Home() {
           </h2>
 
           <p className="font-normal text-[14px] max-w-2xl mb-6 leading-relaxed tracking-wide text-black">
-            A Frontend Developer and I specialize in building and designing clean, responsive and functional websites for businesses and individuals.
+            A Frontend Website Developer and I specialize in building and designing clean, responsive and functional websites for businesses and individuals.
           </p>
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
