@@ -4,17 +4,14 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [formStatus, setFormStatus] = useState("");
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      // Use FormData for compatibility with Formspree free tier
       const data = new FormData();
       data.append("name", formData.name);
       data.append("email", formData.email);
@@ -68,7 +65,7 @@ export default function Contact() {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Name */}
+          {/* Name inpyt */}
           <div>
             <label className="block text-sm font-medium text-gray-500">Name</label>
             <input

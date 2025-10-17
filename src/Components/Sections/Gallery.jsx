@@ -41,7 +41,7 @@ const eventImages = [
   event13,
 ];
 
-function ParallaxRow({ images, baseVelocity = 2 }) { // Significantly reduced base velocity
+function ParallaxRow({ images, baseVelocity = 2 }) { 
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -49,7 +49,7 @@ function ParallaxRow({ images, baseVelocity = 2 }) { // Significantly reduced ba
     damping: 50,
     stiffness: 400,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 100], [0, 1], { // Reduced max velocity factor
+  const velocityFactor = useTransform(smoothVelocity, [0, 100], [0, 1], { 
     clamp: false,
   });
 

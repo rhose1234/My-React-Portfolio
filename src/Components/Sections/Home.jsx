@@ -17,6 +17,7 @@ const fadeIn = (direction, delay) => {
       opacity: 1,
       transition: {
         type: 'spring',
+        once : true ,
         duration: 1.2,
         delay: delay,
         ease: [0.5, 0.25, 0.25, 0.75],
@@ -62,7 +63,7 @@ export default function Home() {
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a
-              href="/Marvelous_Rose_Resume.pdf"
+              href="/Rose_Marvelous_CV.pdf"
               download="Rose_Marvelous_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"

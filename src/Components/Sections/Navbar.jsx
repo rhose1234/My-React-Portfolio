@@ -24,7 +24,7 @@ export default function Navbar() {
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        {/* Mobile Menu Button */}
+        {/* Hamburger menu */}
         <button
           className="md:hidden text-black focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -34,7 +34,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown menu */}
       <div
         className={`md:hidden bg-black text-white overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
