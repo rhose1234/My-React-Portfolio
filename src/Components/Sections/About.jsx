@@ -8,6 +8,9 @@ import tailwind from "../../images/tailwind.png";
 import git from "../../images/git.png"
 import github from "../../images/github.png";
 import figma from "../../images/figma.webp"
+import wordpress from "../../images/wordpress.png"
+import nextjs from "../../images/nextjs.png"
+import typescript from "../../images/typescript.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
@@ -22,11 +25,14 @@ const skills = [
     { src: figma, label: "Figma" },
   { src: git, label: "Git" },
   { src: github, label: "Github" },
+  { src: wordpress, label: "Wordpress" },
+   { src: nextjs, label: "NextJs" },
+   { src: typescript, label: "Typescript" },
 ];
 
 export default function About() {
   return (
-    <div className='max-w-full overflow-x-hidden container mx-auto px-3 md:px-16 lg:pt-24 lg:px-24 pt-10 md:pt-16' id='about'>
+    <div className='max-w-full overflow-x-hidden items-center  container mx-auto px-3 md:px-16 lg:pt-24 lg:px-24 pt-10 md:pt-16' id='about'>
       <div className="grid grid-cols-1 md:grid-cols-2 relative gap-x-10 gap-y-6">
 
         <div className="hidden md:grid grid-cols-3 gap-4 w-full" data-aos="zoom-in-right">
