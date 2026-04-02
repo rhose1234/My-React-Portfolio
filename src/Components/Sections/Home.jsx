@@ -63,8 +63,8 @@ export default function Home() {
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a
-              href="/Rose_Marvelous_CV.pdf"
-              download="Rose_Marvelous_CV.pdf"
+              href="/Rose_Marvelous_Akorede_Frontend_Engineer_CV.pdf"
+              download="Rose_Marvelous_Akorede_Frontend_Engineer_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-[#613B26] text-white rounded-xl font-medium shadow-xl hover:bg-transparent hover:border-2 hover:border-[#613B26] hover:text-[#613B26] transition-colors duration-300 inline-block text-center"
